@@ -1,0 +1,109 @@
+*{
+   margin: 0; 
+   padding: 0;
+   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif, monospace;
+}
+
+.banner{
+  width: 100%;
+  height: 100%; 
+  background-image: url(images.jpeg); 
+  background-position: center; 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo { 
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none; 
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a{
+  text-decoration: none; 
+  color: #7e4924; 
+   letter-spacing: 0.1em;
+}
+
+.container {
+  width: 100%;
+  min-height: 5vh;
+  padding-left: 5%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar{
+  width: 100%;
+  margin-top: -100px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: -20px 20px;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none; 
+  padding: 24px 20px; 
+  font-size: 20px;
+  color: #7e4924;
+}
+
+.search-bar button img{
+  width: 25px;
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #7e4924;
+  cursor: pointer;
+}
+
+
+
+.product-display
+{ margin-top: 50px; 
+margin-left: 50%; margin-right: 50%;  
+padding: 30px;
+border-radius: 20px;
+background-color: #fff;
+box-shadow: rgba(126, 73, 36, 0.3) 0px 0px 0px 3px;
+width: 1200px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-right: 50%;
+  margin-left: 38%;
+  letter-spacing: 0.5em;
+  color: #7e4924;
+}
+
+td {
+border: 1px solid black;
+}
+
+

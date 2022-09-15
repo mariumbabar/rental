@@ -1,0 +1,63 @@
+
+<html>
+<head>
+<title>Realty Buddy</title>
+   <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+             
+         <a href="homepage.html"><img src="logo.png" alt="Homepage" style="width:150px;height:150px;"></a>
+         
+            <ul>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+<div id="container">
+<p id = "result"> </p>
+</div>
+<script>
+    // Javascript program to implement Luhn algorithm
+     
+    // Returns true if given
+    // card number is valid
+    function checkLuhn(cardNo)
+    {
+        let nDigits = cardNo.length;
+ 
+        let nSum = 0;
+        let isSecond = false;
+        for (let i = nDigits - 1; i >= 0; i--)
+        {
+ 
+            let d = cardNo[i].charCodeAt() - '0'.charCodeAt();
+ 
+            if (isSecond == true)
+                d = d * 2;
+ 
+            // We add two digits to handle
+            // cases that make two digits
+            // after doubling
+            nSum += parseInt(d / 10, 10);
+            nSum += d % 10;
+ 
+            isSecond = !isSecond;
+        }
+        return (nSum % 10 == 0);
+    }
+    //whatever card number is given can be put in here to run the program
+    let cardNo = "79927398713";
+    if (checkLuhn(cardNo))
+      document.write("This is a valid card");
+    else
+      document.write("This is not a valid card");
+   
+  document.getElementById("result").innerHTML = "";
+</script>
+</div>
+</body>
+</html>
